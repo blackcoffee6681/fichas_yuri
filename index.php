@@ -24,9 +24,6 @@ if(isset($_POST['jogador']) || isset($_POST['senha'])){
 
             $_SESSION['id'] = $usuario['id_usuario'];
             $_SESSION['jogador'] = $usuario['nome_usuario'];
-            $_SESSION['nome_personagem'] = $usuario['nome_personagem'];
-            $_SESSION['itens'] = $usuario['itens_inventario'];
-            $_SESSION['forca'] = $usuario['atributo_forca'];
 
             header("Location: ficha.php");
 
